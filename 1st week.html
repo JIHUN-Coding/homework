@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>타일나라에 오신것을 환영합니다.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Gugi', cursive;
+        }
+        .porto-tile {
+            width: 350px;
+            height: 250px;
+            background-color: white;
+            background-image: url("https://previews.123rf.com/images/pgmart/pgmart1604/pgmart160400027/55602211-%EC%A7%80-%EB%AA%A8%EB%A1%9C%EC%BD%94-%ED%8F%AC%EB%A5%B4%ED%88%AC%EA%B0%88%EC%96%B4-%EC%95%84-%EC%A4%84%EB%A0%88-%EC%A3%BC-%ED%83%80%EC%9D%BC-%EB%B0%8F-%ED%85%8C%EB%91%90%EB%A6%AC-%EB%B3%B5%EA%B3%A0%ED%92%8D-%EC%9E%A5%EC%8B%9D%EC%97%90%EC%84%9C-%EB%B9%88%ED%8B%B0%EC%A7%80-%EC%9B%90%ED%99%9C%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg");
+            background-position: center;
+            background-size: cover;
+            margin-top: 30px;
+        }
+
+        .price {
+            font-size: 15px;
+        }
+
+        .site {
+            width: 350px;
+        }
+
+        .order {
+            width: 350px;
+        }
+
+        .mybtn {
+            margin: auto;
+            display: block;
+        }
+        .wrap {
+            margin: auto;
+            width: 350px;
+        }
+
+    </style>\
+    <script>
+        function hey(){
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="porto-tile"></div>
+    <div class="site">
+        <h1>아줄레주 타일 판매합니다. <span class="price">가격:25,000원/장</span></h1>
+        <p>서유럽 포르투갈을 대표하는 타일입니다. 건축물부터 식탁에 이르기까지 포르투갈의 감성을 흠뻑 느낄수 있는 아이템 입니다.</p>
+    </div>
+    <div class="order">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--수량을 선택하세요--</option>
+                <option value="1">1장</option>
+                <option value="2">2장</option>
+                <option value="3">3장</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button onclick="hey()"button" class="btn btn-primary mybtn">주문하기</button>
+    </div>
+</div>
+</body>
+
+</html>
